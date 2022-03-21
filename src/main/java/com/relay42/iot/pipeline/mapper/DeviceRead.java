@@ -1,4 +1,4 @@
-package mapper;//import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+package com.relay42.iot.pipeline.mapper;//import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 
 
 import java.io.Serializable;

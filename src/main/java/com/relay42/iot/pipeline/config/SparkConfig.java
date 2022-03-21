@@ -1,4 +1,4 @@
-package config;
+package com.relay42.iot.pipeline.config;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.sql.SparkSession;

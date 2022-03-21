@@ -1,13 +1,15 @@
-import config.SparkConfig;
+package com.relay42.iot.pipeline;
+
+import com.relay42.iot.pipeline.config.SparkConfig;
 import org.apache.spark.sql.*;
 import org.apache.spark.sql.streaming.OutputMode;
 import org.apache.spark.sql.streaming.StreamingQuery;
 import org.apache.spark.sql.streaming.StreamingQueryException;
-import service.PipelineService;
+import com.relay42.iot.pipeline.service.PipelineService;
 
 import java.io.IOException;
 
-class PipelineApplication{
+public class PipelineApplication{
 
     public static void main(String[] args) throws StreamingQueryException {
 

@@ -1,7 +1,7 @@
-package service;
+package com.relay42.iot.pipeline.service;
 
-import config.SparkConfig;
-import mapper.DeviceRead;
+import com.relay42.iot.pipeline.config.SparkConfig;
+import com.relay42.iot.pipeline.mapper.DeviceRead;
 import org.apache.commons.net.util.Base64;
 import org.apache.spark.sql.*;
 import org.codehaus.jackson.map.ObjectMapper;
