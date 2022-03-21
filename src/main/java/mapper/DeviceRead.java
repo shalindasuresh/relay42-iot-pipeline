@@ -1,4 +1,4 @@
-package mappers;//import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+package mapper;//import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 
 
 import java.io.Serializable;
