@@ -19,7 +19,7 @@ public class PipelineApplication{
                 .readStream()
                 .format("kafka")
                 .option("kafka.bootstrap.servers", "0.0.0.0:9092,0.0.0.0:9093,0.0.0.0:9094")
-//                .option("startingOffsets", "earliest")
+                .option("startingOffsets", "earliest")
                 .option("subscribe", "iot-data")
 
                 .load().selectExpr("CAST(value AS STRING)");

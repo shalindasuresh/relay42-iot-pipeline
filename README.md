@@ -47,6 +47,8 @@ Benefits to the solution :
 
 ## Run Locally
 
+### Note : Please run data producer simulator at https://github.com/operations-relay42/iot-producer-simulator-api
+
 
 Start Cassandra
 
