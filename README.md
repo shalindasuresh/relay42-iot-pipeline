@@ -48,6 +48,63 @@ Benefits to the solution :
 ## Run Locally
 
 
+Start Cassandra
+
+```bash
+  docker-compose up -d
+```
+
+
+SSH into Cassandra
+
+```bash
+  docker exec -u root  -t -i  cassandra_db  /bin/bash
+```
+
+CQLSH command
+
+```bash
+  cqlsh
+```
+
+Create Keyspace in cassandra
+```bash
+CREATE KEYSPACE IF NOT EXISTS "relay42" WITH REPLICATION =
+{ 'class': 'SimpleStrategy',
+'replication_factor': '3'
+};
+```
+
+Create table in cassandra
+```bash
+Create table relay42.device_read
+(
+"id" int,
+"type"  text,
+"name" text,
+"clusterId" int,
+"timestamp" text ,
+"value" double,
+"initialized" boolean,
+Primary key((type),timestamp)
+);
+
+```
+
+Create column index
+```bash
+CREATE INDEX ON relay42.device_read ("name");
+
+```
+
+Exit container
+
+```bash
+  exit
+```
+
+
+
 Install dependencies
 
 ```bash
